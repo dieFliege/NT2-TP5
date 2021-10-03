@@ -18,7 +18,7 @@
     props: ['productos'],
     methods: {
       agregar: function (){
-        this.productos.push({id: `${parseInt(this.productos[this.productos.length-1].id, 10)+1}`, description: `${document.getElementById('descripcion').value}`, precio: `${document.getElementById('precio').value}`})
+        this.productos.push({id: `${this.productos.length+1}`, description: `${document.getElementById('descripcion').value}`, precio: `${document.getElementById('precio').value}`})
       },
       eliminar: function (index){
         index = parseInt(index)
